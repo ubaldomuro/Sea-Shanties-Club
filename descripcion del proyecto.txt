@@ -1,0 +1,11 @@
+El proyecto es una pagina de un club que se adaptara dependiendo el tamaño de pantalla
+
+Para el proyecto se necesita:
+	•nombre del club
+	•el diseño y estilo de la pagina
+	•imagenes
+
+Debera tener implementacion de:
+	•unidades relativas % rem em
+	•media queries
+	
