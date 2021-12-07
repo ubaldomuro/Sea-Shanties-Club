@@ -3,17 +3,48 @@
 
     <head>
         <title>Sea Shanties Club</title>
+        <script type="text/javascript" src="script.js"></script>
         <link href="styles.css" rel="stylesheet">
         <link rel="shortcut icon" href="resources/icon.jpg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,400&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
-        <nav></nav>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Meet the club</a>
+            <a href="#">Week bests</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
         <header>
             <h1>Sea Shanties Club</h1>
+            <span>Welcome to Sea Shanties Club where we gather to share our love for this music</span>
         </header>
-        <main></main>
+
+        <main>
+            <div id="meetTheClub">
+                <h2>A bit of background about Us</h2>
+                <p>We created the club with the the mentality that anyone who likes to sign sea 
+                    shanties could be part of it, always whit respect between the members, 
+                    we are not professional singers and we are not trying to be, but that doesn’t 
+                    mean we should not sign at all, we do this just for fun and because we like 
+                    to express ourselves through the music.
+                </p>
+                <div class="galleryContainer">
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <img class="slideGallery" src="resources/club-1.png">
+                    <img class="slideGallery" src="resources/club-2.png">
+                    <img class="slideGallery" src="resources/club-3.png">
+                    <img class="slideGallery" src="resources/club-4.png">
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+            </div>
+
+        </main>
+
         <footer></footer>
     </body>
-
 </html>
