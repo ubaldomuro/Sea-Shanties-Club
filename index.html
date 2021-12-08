@@ -3,7 +3,7 @@
 
     <head>
         <title>Sea Shanties Club</title>
-        <script type="text/javascript" src="script.js"></script>
+        <script defer type="text/javascript" src="script.js"></script>
         <link href="styles.css" rel="stylesheet">
         <link rel="shortcut icon" href="resources/icon.jpg" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,20 +13,20 @@
 
     <body>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Meet the club</a>
-            <a href="#">Week bests</a>
-            <a href="#">Contact Us</a>
+            <a href="#home">Home</a>
+            <a href="#meetTheClub">Meet the club</a>
+            <a href="#weekBests">Week bests</a>
+            <a href="#contactUs">Contact us</a>
         </nav>
 
-        <header>
+        <header id="home">
             <h1>Sea Shanties Club</h1>
             <span>Welcome to Sea Shanties Club where we gather to share our love for this music</span>
         </header>
 
         <main>
             <div id="meetTheClub">
-                <h2>A bit of background about Us</h2>
+                <h2>A bit of background about us</h2>
                 <p>We created the club with the the mentality that anyone who likes to sign sea 
                     shanties could be part of it, always whit respect between the members, 
                     we are not professional singers and we are not trying to be, but that doesn’t 
@@ -43,8 +43,31 @@
                 </div>
             </div>
 
+            <div id="weekBests">
+                <h2>This week best sea shanties acording to the club</h2>
+                <div id="songContainer">
+                    <iframe src="https://open.spotify.com/embed/track/3axCgesL3rsjGzCX9ZJCTo" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed/track/3aCv2VDUSoLlzrSJ2Py96a" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed/track/4M8KqCrBafWw7UfugjZ8ln" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+
+            <div id="contactUs">
+                <h2>Contact us</h2>
+                <ul>
+                    <li>Cole Cassidy</li>
+                    <li>+52 33 45 78 12 45</li>
+                    <li>Av. de los sueños rotos #1234</li>
+                    <li>cole.cas@gmail.com</li>
+                    <li>@theramparts</li>
+                </ul>
+            </div>
         </main>
 
-        <footer></footer>
+        <footer>
+            <span>Ubaldo Muro</span>
+            <span>Diciembre 2021</span>
+        </footer>
+        
     </body>
 </html>
