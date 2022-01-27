@@ -3,6 +3,8 @@
     font-family: 'Source Sans Pro', sans-serif;
 */
 
+
+
 /*-----Universal Styles-----*/
 
 *   {
@@ -43,6 +45,21 @@ nav a   {
     color:rgba(97, 22, 22, 0.7);
 }
 
+@media only screen and (max-width: 700px) {
+    nav {
+        height: 2rem;
+        background-image: none;
+        background-color: rgba(97, 22, 22, 1);
+    }
+
+    nav a   {
+        background-image: none;
+        margin: 0rem;
+        padding: 0.1rem;
+        color: white;
+    }
+}
+
 
 
 /*-----Header-----*/
@@ -68,13 +85,29 @@ header  span    {
     font-size:  1.7rem;
 }
 
+@media only screen and (max-width: 950px) {
+    header  span    {
+        font-size:  1.7rem;
+        text-align: center;
+        margin: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header  h1  {
+        font-size:  3.5rem;
+    }
+
+    header  span    {
+        font-size:  1.2rem;
+        text-align: center;
+        margin: 0.2rem;
+    }
+}
+
 
 
 /*-----Meet the club-----*/
-
-#meetTheClub    {
-    margin: 10vw;
-}
 
 #meetTheClub    h2{
     font-family: 'Comforter', cursive;
@@ -107,12 +140,40 @@ header  span    {
     }
 }
 
+@media only screen and (max-width: 700px) {
+    #meetTheClub    h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #meetTheClub    p{
+        font-size:  1.2rem;
+        text-align: center;
+        margin: 0.2rem;
+    }
+
+    #meetTheClub    .galleryContainer   {
+        width: 100%;
+    }
+
+    #meetTheClub    button  {
+        z-index: 1;
+    }
+}
+
 
 
 /*-----Week bests-----*/
 
-#weekBests  {
-    margin: 10vw;
+.container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.container.full-width {
+    margin-left: 0vw;
+    margin-right: 0vw;
 }
 
 #weekBests  h2  {
@@ -155,10 +216,6 @@ header  span    {
 
 /*-----Contact us-----*/
 
-#contactUs  {
-    margin: 10vw;
-}
-
 #contactUs  h2  {
     font-family: 'Comforter', cursive;
     font-size: 3rem;
@@ -176,6 +233,20 @@ header  span    {
     background-position-y: center;
 }
 
+@media only screen and (max-width: 700px) {
+    #contactUs  h2  {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #contactUs  ul  {
+        height: 100%;
+        background-image: none;
+        font-size: 1.2rem;
+    }
+}
+
 
 
 /*-----Footer-----*/
@@ -184,8 +255,5 @@ footer  {
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 1vw;
-    color:  black;
-    background-color: rgba(97, 22, 22, 0.7);
     font-size: 0.8rem;
 }
